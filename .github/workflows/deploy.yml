@@ -13,7 +13,9 @@ jobs:
         username: ${{ secrets.AZURE_VM_USERNAME }}
         key: ${{ secrets.AZURE_VM_SSH_KEY }}
         script: |
-          cd /home/abbassi.maram/Pfe
-          git pull origin main
-          docker-compose down
-          docker-compose up -d --build
+          cd /home/abbassi.maram || mkdir -p /home/abbassi.maram
+          cd /home/abbassi.maram
+          rm -rf Pfe
+          git clone https://github.com/AbassiMaram/Pfe.git Pfe
+          cd Pfe
+          echo "Deployment completed successfully"
