@@ -1,1 +1,2 @@
 # LoyaltyHub Project
+Fix username
