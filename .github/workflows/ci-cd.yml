@@ -8,16 +8,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
     - name: Deploy to Azure
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.AZURE_VM_IP }}
-        username: ${{ secrets.AZURE_VM_USERNAME }}
-        key: ${{ secrets.AZURE_VM_SSH_KEY }}
+        username: ${{ secrets.AZURE_VM_USERNAME }}  # Doit être "abbassi"
+        key: ${{ secrets.AZURE_VM_SSH_KEY }}       # Clé privée SSH
         script: |
-          cd /home/abbassi.maram
-          rm -rf pfe
-          git clone https://github.com/AbassiMaram/Pfe.git pfe
-          cd pfe
+          # Vérifie ou crée le répertoire
+          cd /home/abbassi || mkdir -p /home/abbassi
+          cd /home/abbassi
+          
+          # Supprime et recrée le répertoire du projet
+          rm -rf Pfe
+          git clone https://github.com/AbassiMaram/Pfe.git Pfe
+          
+          # Entre dans le répertoire et exécute Docker
+          cd Pfe
           docker-compose down || true
           docker-compose up -d --build
+          echo "Deployment completed successfully"
