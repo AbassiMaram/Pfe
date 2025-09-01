@@ -1,0 +1,26 @@
+[
+  {
+    "access": "Allow",
+    "direction": "Inbound",
+    "name": "AllowFrontend-3001",
+    "ports": "3001",
+    "priority": 101,
+    "protocol": "Tcp"
+  },
+  {
+    "access": "Allow",
+    "direction": "Inbound",
+    "name": "AllowFrontend",
+    "ports": "3001",
+    "priority": 100,
+    "protocol": "Tcp"
+  },
+  {
+    "access": "Allow",
+    "direction": "Inbound",
+    "name": "AllowBackend",
+    "ports": "6000",
+    "priority": 110,
+    "protocol": "Tcp"
+  }
+]
