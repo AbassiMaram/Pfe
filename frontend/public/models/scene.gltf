@@ -1,0 +1,405 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2147,
+      "max": [
+        17.665651321411133,
+        105.6366958618164,
+        14.302742004394531
+      ],
+      "min": [
+        -17.592559814453125,
+        13.401333808898926,
+        -9.23297119140625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 25764,
+      "componentType": 5126,
+      "count": 2147,
+      "max": [
+        0.9997062683105469,
+        0.6588026881217957,
+        0.9994038343429565
+      ],
+      "min": [
+        -0.9998614192008972,
+        -0.9930132031440735,
+        -0.9998286366462708
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2147,
+      "max": [
+        0.9993319511413574,
+        0.6436541676521301,
+        0.9999956488609314,
+        1.0
+      ],
+      "min": [
+        -0.9999651908874512,
+        -0.7141799926757813,
+        -0.9999740719795227,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2147,
+      "max": [
+        1.308780312538147,
+        7.354641437530518
+      ],
+      "min": [
+        -1.3087801933288574,
+        -2.6809191703796387
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 17176,
+      "componentType": 5126,
+      "count": 2147,
+      "max": [
+        1.308780312538147,
+        7.354641437530518
+      ],
+      "min": [
+        -1.3087801933288574,
+        -2.6809191703796387
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 34352,
+      "componentType": 5126,
+      "count": 2147,
+      "max": [
+        1.308780312538147,
+        7.354641437530518
+      ],
+      "min": [
+        -1.3087801933288574,
+        -2.6809191703796387
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 11634,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 51528,
+      "componentType": 5126,
+      "count": 524,
+      "max": [
+        1.612436294555664,
+        98.08258056640625,
+        14.273880004882813
+      ],
+      "min": [
+        0.11208868026733398,
+        96.60806274414063,
+        13.866045951843262
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 57816,
+      "componentType": 5126,
+      "count": 524,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999441504478455,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 51528,
+      "componentType": 5126,
+      "count": 524,
+      "max": [
+        0.9710000157356262,
+        0.9591000080108643
+      ],
+      "min": [
+        0.031700000166893005,
+        0.024299999698996544
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 46536,
+      "componentType": 5125,
+      "count": 2688,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Ali Şahan Yalçın (https://sketchfab.com/alisahanyalcin)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/jeans-ef545e6268cd463fb5c23b277242cf69",
+      "title": "Jeans"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 57288,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 55720,
+      "byteOffset": 57288,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 64104,
+      "byteOffset": 113008,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 34352,
+      "byteOffset": 177112,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 211464,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Super_120s_Wool_FCL1PSW001_FRONT_4174_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Super_120s_Wool_FCL1PSW001_FRONT_4174_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Super_120s_Wool_FCL1PSW001_FRONT_4174_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Super_120s_Wool_FCL1PSW001_FRONT_4174",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material1747108",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.03189603307301153,
+          0.03560131487502032,
+          0.042311410620809675,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "jeans_Super_120s_Wool_FCL1PSW001_FRONT_4174_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "jeans_Material1747108_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 8,
+            "POSITION": 7,
+            "TEXCOORD_0": 9
+          },
+          "indices": 10,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "315732abd4404061877390a3560a64fd.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "jeans"
+    },
+    {
+      "mesh": 0,
+      "name": "jeans_Super_120s_Wool_FCL1PSW001_FRONT_4174_0"
+    },
+    {
+      "mesh": 1,
+      "name": "jeans_Material1747108_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
