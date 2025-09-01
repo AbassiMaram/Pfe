@@ -13,12 +13,12 @@ jobs:
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.AZURE_VM_IP }}
-        username: ${{ secrets.AZURE_VM_USERNAME }}  # Doit être "abbassi"
-        key: ${{ secrets.AZURE_VM_SSH_KEY }}       # Clé privée SSH
+        username: abbassi.maram          # <- corrigé ici
+        key: ${{ secrets.AZURE_VM_SSH_KEY }}
         script: |
           # Vérifie ou crée le répertoire
-          cd /home/abbassi || mkdir -p /home/abbassi
-          cd /home/abbassi
+          cd /home/abbassi.maram || mkdir -p /home/abbassi.maram
+          cd /home/abbassi.maram
           
           # Supprime et recrée le répertoire du projet
           rm -rf Pfe
@@ -27,5 +27,12 @@ jobs:
           # Entre dans le répertoire et exécute Docker
           cd Pfe
           docker-compose down || true
+          
+          # Supprimer anciennes images pour éviter les conflits
+          docker image rm frontend-image:latest backend-image:latest || true
+          
+          # Déployer les nouvelles images
           docker-compose up -d --build
+          
           echo "Deployment completed successfully"
+
