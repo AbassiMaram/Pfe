@@ -2,25 +2,23 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [ main ]
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-
     - name: Deploy to Azure
-  uses: appleboy/ssh-action@v1.0.0
-  with:
-    host: ${{ secrets.AZURE_VM_IP }}
-    username: abbassi.maram
-    key: ${{ secrets.AZURE_VM_SSH_KEY }}
-    script: |
-      cd /home/abbassi.maram
-      rm -rf Pfe
-      git clone https://github.com/AbassiMaram/Pfe.git Pfe
-      cd Pfe
-      docker-compose down || true
-      docker image rm frontend-image:latest backend-image:latest || true
-      docker-compose up -d --build
-      echo "Deployment completed successfully"
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.AZURE_VM_IP }}
+        username: ${{ secrets.AZURE_VM_USERNAME }}
+        key: ${{ secrets.AZURE_VM_SSH_KEY }}
+        script: |
+          cd /home/abbassi.maram
+          rm -rf Pfe
+          git clone https://github.com/AbassiMaram/Pfe.git Pfe
+          cd Pfe
+          docker-compose down || true
+          docker image rm frontend-image:latest backend-image:latest || true
+          docker-compose up -d --build
+          echo "Deployment completed successfully"
